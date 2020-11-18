@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        A clock
+    </title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <form action="#" class="form">
+        <h2 class="form__header">Type time:</h2>
+        <label class="form__label" for="hours">Hours (0 - 23):</label>
+        <input type="number" max="23" min="0" id="hours" class="form__input"/>
+        <label class="form__label" for="minutes">Minutes (0 - 59):</label>
+        <input type="number" max="59" min="0" id="minutes" class="form__input"/>
+        <input class="form__btn" type="submit" value="Submit">
+
+        <span class="form__angle"></span>
+    </form>
+
+    <div class="clocks">
+        <span class="clocks__minutes clocks__hand"></span>
+        <span class="clocks__hour clocks__hand"></span>
+        <span class="clocks__center"></span>
+    </div>
+
+    <script defer src="js/index.js"></script>
+</body>
+</html>
